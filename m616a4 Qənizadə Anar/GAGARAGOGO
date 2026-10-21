@@ -1,0 +1,3 @@
+a=[3,5,2,5,7,5,2,3]
+b=max(set(a), key=a.count)
+print(b)
