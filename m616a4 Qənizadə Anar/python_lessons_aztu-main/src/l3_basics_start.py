@@ -58,8 +58,21 @@ print("sizin element", deyisen_list[input1-1])
 print("=== Kərpic 6 ===")   # Lüğət (dict)
 # TODO: row = {...}, row["region"]
 
+row = {"cell_id": "BAK-0207", "region" : "Yasamal", "rsrp_dbm" : -108.1}
+print(row["region"])
+print(row["rsrp_dbm"])
+row["Nesimi"] = "LTE800"
+row["region"] = "Nesimi"
+print(row["region"])
+print(row["rsrp_dbm"])
+
 print("=== Kərpic 7 ===")   # Dövr (for) və şərt (if / else)
 # TODO: zəif ölçmələri saymaq
+rsrp_list = [-91.5, -108.1, -86.2, -103.3, -110.4]
+eded = float(input("istediyin reqemi daxil et:"))
+for v in rsrp_list:
+    print(v* eded)
+
 
 print("=== Kərpic 8 ===")   # Funksiya: çağırmaq və yaratmaq
 # TODO: round, len, max; def is_weak(rsrp)
